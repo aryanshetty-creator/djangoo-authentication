@@ -35,3 +35,7 @@ def logout_user(request):
 def dashboard(request):
     return render(request, 'users/dashboard.html', {'username': request.user.username})
 
+def home(request):
+    return render(request, 'users/home.html')
+
+
